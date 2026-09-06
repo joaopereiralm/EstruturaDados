@@ -1,0 +1,22 @@
+João Paulo de Almeida Pereira
+Edson Luiz Soares da Silva
+3° Semestre - ADS Fatec
+
+Obs: O algoritmo de Inserção Direta apresentou o melhor desempenho geral entre os três métodos testados. Ele alcançou o menor tempo de execução no cenário com dados aleatórios, superando o Bubble Sort e a Seleção Direta. Além disso, aproveitou com máxima eficiência a estrutura do vetor já ordenado, registrando o tempo mais rápido de todo o teste.
+
+
+Valores apresentados, do teste realizado:
+ BUBBLE SORT 
+ - Vetor Aleatório     : 3,1528 ms
+ - Vetor Ordenado      : 0,0055 ms
+ - Vetor Invertido     : 0,8082 ms
+
+ SELECAO DIRETA 
+ - Vetor Aleatório     : 1,4303 ms
+ - Vetor Ordenado      : 0,9782 ms
+ - Vetor Invertido     : 0,9359 ms
+
+ INSERCAO DIRETA 
+ - Vetor Aleatório     : 1,1895 ms
+ - Vetor Ordenado      : 0,0053 ms
+ - Vetor Invertido     : 0,9604 ms
