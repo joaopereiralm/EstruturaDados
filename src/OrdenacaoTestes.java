@@ -4,7 +4,6 @@ public class OrdenacaoTestes {
   public static void main(String[] args) {
     Random random = new Random();
     //randoms
-
     int[] aleatorio1 = new int[1000];
     int[] aleatorio2 = new int[1000];
     int[] aleatorio3 = new int[1000];
