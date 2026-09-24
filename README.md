@@ -11,4 +11,7 @@ O projeto possui todo o código-fonte localizado dentro da pasta `src/`:
 ```text
 .
 └── src/
-    └── OrdenacaoTestes.java
+    └── NomeInverter.java
+        OrdenacaoTestes.java
+        Pilha.java
+        TesteOrdenacao.java
