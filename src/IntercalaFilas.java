@@ -1,44 +1,31 @@
-import java.util.LinkedList;
+import java.util.ArrayDeque;
 import java.util.Queue;
-import java.util.Stack;
 
 public class IntercalaFilas {
+    public static Queue<Integer> intercalar(Queue<Integer> f1, Queue<Integer> f2) {
+        Queue<Integer> resultado = new ArrayDeque<>();
 
-    public static <T> Queue<T> intercalarFilasComPilha(Queue<T> f1, Queue<T> f2) {
-        Stack<T> p1Aux = new Stack<>();
-        Stack<T> p2Aux = new Stack<>();
-        Stack<T> pIntercalada = new Stack<>();
-        Queue<T> filaResultado = new LinkedList<>();
+        while (!f1.isEmpty() && !f2.isEmpty()) {
+            resultado.add(f1.poll());
+            resultado.add(f2.poll());
+        }
 
+        // if f1 > passa
         while (!f1.isEmpty()) {
-            p1Aux.push(f1.poll());
+            resultado.add(f1.poll());
         }
+
+        // if f2 > passa
         while (!f2.isEmpty()) {
-            p2Aux.push(f2.poll());
+            resultado.add(f2.poll());
         }
 
-        while (p1Aux.size() > p2Aux.size()) {
-            pIntercalada.push(p1Aux.pop());
-        }
-        while (p2Aux.size() > p1Aux.size()) {
-            pIntercalada.push(p2Aux.pop());
-        }
-
-        while (!p1Aux.isEmpty() && !p2Aux.isEmpty()) {
-            pIntercalada.push(p2Aux.pop());
-            pIntercalada.push(p1Aux.pop());
-        }
-
-        while (!pIntercalada.isEmpty()) {
-            filaResultado.add(pIntercalada.pop());
-        }
-
-        return filaResultado;
+        return resultado;
     }
 
     public static void main(String[] args) {
-        Queue<Integer> fila1 = new LinkedList<>();
-        Queue<Integer> fila2 = new LinkedList<>();
+        Queue<Integer> fila1 = new ArrayDeque<>();
+        Queue<Integer> fila2 = new ArrayDeque<>();
 
         fila1.add(1);
         fila1.add(3);
@@ -51,13 +38,12 @@ public class IntercalaFilas {
         fila2.add(10);
 
         //fila1: [1, 3, 5]
-        System.out.println("Fila 1 Original: " + fila1);
+        System.out.println("Fila 1: " + fila1);
         //fila2: [2, 4, 6, 8, 10]
-        System.out.println("Fila 2 Original: " + fila2);
+        System.out.println("Fila 2: " + fila2);
 
-        Queue<Integer> resultado = intercalarFilasComPilha(fila1, fila2);
+        Queue<Integer> intercalada = intercalar(fila1, fila2);
 
-        // saída
-        System.out.println("Fila Intercalada: " + resultado);
+        System.out.println("Fila intercalada: " + intercalada);
     }
 }
