@@ -17,6 +17,7 @@ Todo o código-fonte fica dentro da pasta `src/`:
     ├── NomeInverter.java
     ├── OrdenacaoTestes.java
     ├── Pilha.java
+    └── ProvaEstudo.java
     └── TesteOrdenacao.java
 ```
 
@@ -72,6 +73,12 @@ Todo o código-fonte fica dentro da pasta `src/`:
 * Saída esperada: todas as linhas com `[OK]`.
 
 ---
+
+---
+### 5. 📚 ProvaEstudo
+* Descrição: Programa focado na preparação para provas, reunindo os quatro principais algoritmos de ordenação (Bubble, Selection, Insertion e Quicksort) em um único arquivo executável.
+
+* Objetivo: Servir como material de estudo estruturado (folha de consulta), medindo o tempo de execução (em milissegundos) de cada algoritmo com um volume maior de dados aleatórios.
 
 ## 📝 Resumo da complexidade
 
