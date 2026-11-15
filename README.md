@@ -72,7 +72,6 @@ Todo o código-fonte fica dentro da pasta `src/`:
 * Os casos de borda (vetor vazio, um elemento, todos iguais, duplicados) são onde implementações de ordenação costumam falhar.
 * Saída esperada: todas as linhas com `[OK]`.
 
----
 
 ---
 ### 5. 📚 ProvaEstudo
